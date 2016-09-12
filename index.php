@@ -15,7 +15,7 @@
 
 /* DO NOT DELETE THE FOLLOWING LINE OF CODE!!
 This line connects to the database and loads the functions for performing the database operations */
-require_once "./core/swift_db.php";
+require_once "./core/swift_sql.php";
 
 
 /* SELECT column_names FROM table_name */
