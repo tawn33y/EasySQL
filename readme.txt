@@ -31,7 +31,7 @@
               2.  // $query = select("hello_world", ['id', 'name', 'random'], []);
               3.  // print_results($query);
            Here, simply uncomment the second & third lines (the lines commented out with a '//')
-    - To reuse the code, all you need is a copy of the main library 'swift_db.php' and the connection file.
+    - To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
 
 2. HELP & CONTRIBUTIONS:
   - If you have any questions regarding this library or how to use it, simply get in touch with me via Twitter @tawn33y.
