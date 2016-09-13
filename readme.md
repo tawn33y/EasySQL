@@ -16,12 +16,13 @@
    - Simply create a new database in your server, and import the file 'sample_db.sql'. Note that for my environment, am using PHP Version: 7.0.8
    - The 'core' folder contains a database connection file, and a file with functions for executing swift database functions.
    - Update the credentials in the 'db_connect.php' to match the ones in your local server so as to allow a successful database connection.
-   - The 'core' folder contains two versions of the main library, 'swift_sql.php' - use the minimized version for production and the latter for development purposes.
+   - The 'core' folder contains two versions of the main library, 'swift_sql.php' - use the minimized version for production and the latter for development purposes. 
 
 <h3>Using & Reusing The code</h3>
    - In the root folder, the file 'index.php' contains sample code that illustrate the using of this library.
    - To illustrate a function's usage, simply uncomment the lines of code which follow the line commented out as /* .. */
        - For example, simply uncoment the second & third lines below (the lines commented out with a '//')
+
       	 -  /* SELECT column_names FROM table_name */
       	 -  // $query = select("hello_world", ['id', 'name', 'random'], []);
      	 -  // print_results($query);
@@ -29,4 +30,4 @@
    - To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
 
 <h3>Help</h3>
-  - If you have any questions regarding this library or how to use it, simply get in touch with me via Twitter @tawn33y.
+  - If you have any questions regarding this library or how to use it, get in touch with me via Twitter @tawn33y.
