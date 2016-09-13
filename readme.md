@@ -21,12 +21,11 @@
 <h3>Using & Reusing The code</h3>
    - In the root folder, the file 'index.php' contains sample code that illustrate the using of this library.
    - To illustrate a function's usage, simply uncomment the lines of code which follow the line commented out as /* .. */
-       - e.g.
-      	 -   /* SELECT column_names FROM table_name */
-      	 -   // $query = select("hello_world", ['id', 'name', 'random'], []);
+       - For example, simply uncoment the second & third lines below (the lines commented out with a '//')
+      	 -  /* SELECT column_names FROM table_name */
+      	 -  // $query = select("hello_world", ['id', 'name', 'random'], []);
      	 -  // print_results($query);
 
-       Here, simply uncomment the second & third lines (the lines commented out with a '//')
    - To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
 
 <h3>Help</h3>
