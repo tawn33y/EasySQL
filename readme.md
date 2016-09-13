@@ -17,15 +17,15 @@
    - The 'core' folder contains a database connection file, and a file with functions for executing swift database functions.
    - Update the credentials in the 'db_connect.php' to match the ones in your local server so as to allow a successful database connection.
    - The 'core' folder contains two versions of the main library, 'swift_sql.php' - use the minimized version for production and the latter for development purposes.
-***
+
 <h3>Using & Reusing The code</h3>
    - In the root folder, the file 'index.php' contains sample code that illustrate the using of this library.
    - To illustrate a function's usage, simply uncomment the lines of code which follow the line commented out as /* .. */
-       e.g.
-       >  /* SELECT column_names FROM table_name */
-       >  // $query = select("hello_world", ['id', 'name', 'random'], []);
-       -  // print_results($query);
-<hr/>
+       - e.g.
+      	 -   /* SELECT column_names FROM table_name */
+      	 -   // $query = select("hello_world", ['id', 'name', 'random'], []);
+     	 -  // print_results($query);
+
        Here, simply uncomment the second & third lines (the lines commented out with a '//')
    - To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
 
