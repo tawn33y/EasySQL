@@ -6,12 +6,10 @@
 <h3>What is Swift SQL?</h3>
 Swift SQL is a library created with the objective of reducing the amount of code one has to write in order to connect to and perform operations on a database e.g. to select data from a database in a specific format or update the data in a database table.
 
-<h3>Main Features</h3>
+<h3>Features</h3>
   - The library uses the PDO approach and an object-oriented approach in the PHP Language.
   - Security is a major concern, and thus major steps are taken to achieve this;
       e.g. use of Prepared Statements, and escaping data before each database operation is executed.
-  - Note that in functions which return data from the database, the data is returned in a 2D array. Do a loop to get individual data (examples are given).
-      e.g. in 'select()' && 'select2()' functions.
 
 <h3>Getting Started - Setting up a sample environment</h3>
    - To use this library, you need a sample database. An example has been provided in the root directory (sample_db.sql)
@@ -29,7 +27,9 @@ Swift SQL is a library created with the objective of reducing the amount of code
       	 -  // $query = select("hello_world", ['id', 'name', 'random'], []);
      	 -  // print_results($query);
 
-   - To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
+   - Note that in functions which return data from the database, the data is returned in a 2D array. Do a loop to get individual data (examples are given).
+      e.g. in 'select()' && 'select2()' functions.
+   -  To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
 
 <h3>Help | Contact</h3>
   - If you have any questions regarding this library or how to use it, get in touch with me via Twitter @tawn33y.
