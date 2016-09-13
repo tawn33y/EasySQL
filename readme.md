@@ -22,14 +22,12 @@
 <h3>Using & Reusing The code</h3>
    - In the root folder, the file 'index.php' contains sample code that illustrate the using of this library.
    - To illustrate a function's usage, simply uncomment the lines of code which follow the line commented out as /* .. */
-        e.g   > 1.  /* SELECT column_names FROM table_name */
-              > 2.  // $query = select("hello_world", ['id', 'name', 'random'], []);
-              >  3.  // print_results($query);
-           Here, simply uncomment the second & third lines (the lines commented out with a '//')
+       e.g.
+       -  1.  /* SELECT column_names FROM table_name */
+       -  2.  // $query = select("hello_world", ['id', 'name', 'random'], []);
+       -  3.  // print_results($query);
+       Here, simply uncomment the second & third lines (the lines commented out with a '//')
    - To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
 
-<h3>Help & Contributions</h3>
+<h3>Help</h3>
   - If you have any questions regarding this library or how to use it, simply get in touch with me via Twitter @tawn33y.
-  - This is an open source project; as such, contributions are highly appreciated and welcome.
-  - If you need to make a contribution to this project, simply make a pull request on the Github folder.
-  - The main library will be updated to reflect all helpful contributions, and the contributors will be duly recognized.
