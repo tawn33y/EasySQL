@@ -1,6 +1,6 @@
 <h1>Swift SQL</h1>
 
-*Created by K Tony (Twitter: @tawn33y) *
+*Created by K Tony (Twitter: @tawn33y)*
 
 <h3>Foreword</h3>
   - This library is created with the objective of reducing the amount of code one has to write in order to connect to and perform operations on a database.
@@ -22,8 +22,8 @@
    - In the root folder, the file 'index.php' contains sample code that illustrate the using of this library.
    - To illustrate a function's usage, simply uncomment the lines of code which follow the line commented out as /* .. */
        e.g.
-       -  /* SELECT column_names FROM table_name */
-       -  // $query = select("hello_world", ['id', 'name', 'random'], []);
+       >  /* SELECT column_names FROM table_name */
+       >  // $query = select("hello_world", ['id', 'name', 'random'], []);
        -  // print_results($query);
 <hr/>
        Here, simply uncomment the second & third lines (the lines commented out with a '//')
