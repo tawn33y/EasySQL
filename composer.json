@@ -1,0 +1,19 @@
+{
+    "name": "Tawn33y/swift-sql",
+    "description": "Swift library for performing SQL transactions",
+    "keywords": ["swift", "sql", "database"],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tawn33y\\Swift\\": "src/Swift/"
+        }
+    }
+}
