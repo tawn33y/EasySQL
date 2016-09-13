@@ -1,7 +1,6 @@
 <h1>Swift SQL</h1>
 
-*Created by K Tony (Twitter: @tawn33y) . 2016*                                                        |
-*Distributed under the Open Source License*
+*Created by K Tony (Twitter: @tawn33y) *
 
 <h3>Foreword</h3>
   - This library is created with the objective of reducing the amount of code one has to write in order to connect to and perform operations on a database.
@@ -17,15 +16,16 @@
    - Simply create a new database in your server, and import the file 'sample_db.sql'. Note that for my environment, am using PHP Version: 7.0.8
    - The 'core' folder contains a database connection file, and a file with functions for executing swift database functions.
    - Update the credentials in the 'db_connect.php' to match the ones in your local server so as to allow a successful database connection.
-   - The 'core' folder contains two versions of the main library, 'swift_db.php' - use the minimized version for production and the latter for development purposes.
-
+   - The 'core' folder contains two versions of the main library, 'swift_sql.php' - use the minimized version for production and the latter for development purposes.
+***
 <h3>Using & Reusing The code</h3>
    - In the root folder, the file 'index.php' contains sample code that illustrate the using of this library.
    - To illustrate a function's usage, simply uncomment the lines of code which follow the line commented out as /* .. */
        e.g.
-       -  1.  /* SELECT column_names FROM table_name */
-       -  2.  // $query = select("hello_world", ['id', 'name', 'random'], []);
-       -  3.  // print_results($query);
+       -  /* SELECT column_names FROM table_name */
+       -  // $query = select("hello_world", ['id', 'name', 'random'], []);
+       -  // print_results($query);
+<hr/>
        Here, simply uncomment the second & third lines (the lines commented out with a '//')
    - To reuse the code, all you need is a copy of the main library 'swift_sql.php' and the connection file.
 
