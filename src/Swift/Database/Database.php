@@ -23,7 +23,7 @@ class Database
         try {
             $connection = new PDO(
                 "mysql:host=" . $configuration->get('host') . ";dbname=" . $configuration->get('database'),
-                $configuration->get('user'),
+                $configuration->get('username'),
                 $configuration->get('password')
             );
 
@@ -33,5 +33,15 @@ class Database
         } catch (PDOException $e) {
             throw new ConnectionException("Sorry we're experiencing connection problems: " . $e->getMessage());
         }
+    }
+
+    /**
+     * Get the database connection.
+     *
+     * @return PDO
+     */
+    public function getConnection()
+    {
+        return $this->connection;
     }
 }

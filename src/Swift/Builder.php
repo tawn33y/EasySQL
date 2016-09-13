@@ -2,6 +2,7 @@
 
 namespace Tawn33y\Swift;
 
+use PDO;
 use Tawn33y\Swift\Database\Database;
 
 /**
@@ -13,9 +14,9 @@ use Tawn33y\Swift\Database\Database;
 class Builder
 {
     /**
-     * @var Database
+     * @var PDO
      */
-    private $database;
+    private $connection;
 
     /**
      * The table name.
@@ -24,6 +25,12 @@ class Builder
      */
     private $table;
 
+
+    /**
+     * @var string
+     */
+    private $statement = '';
+
     /**
      * Builder constructor.
      *
@@ -31,7 +38,7 @@ class Builder
      */
     public function __construct(Database $database)
     {
-        $this->database = $database;
+        $this->connection = $database->getConnection();
     }
 
     /**
@@ -44,6 +51,7 @@ class Builder
     public function table($table)
     {
         $this->table = $table;
+        $this->statement = '';
 
         return $this;
     }
@@ -59,8 +67,57 @@ class Builder
     {
         $query = 'ALTER TABLE `' . $this->table .'` ADD `' . $name .'` ` '. $type . '`';
 
-        $statement = $this->database->prepare($query);
+        $statement = $this->connection->prepare($query);
 
         $statement->execute();
+    }
+
+    /**
+     * Add constraints to the query.
+     *
+     * @param $column
+     * @param $operator
+     * @param $value
+     *
+     * @return $this
+     */
+    public function where($column, $operator, $value)
+    {
+        $this->statement .= ' WHERE `' . $column . '`' . $operator . $value;
+
+        return $this;
+    }
+
+    /**
+     * Get the query in a particular order.
+     *
+     * @param        $column
+     * @param string $mode
+     *
+     * @return $this
+     */
+    public function orderBy($column, $mode = 'ASC')
+    {
+        $this->statement .= ' ORDER BY `' . $column . '` ' . $mode;
+
+        return $this;
+    }
+
+    /**
+     * Execute the query getting the columns that you want.
+     *
+     * @param array $columns
+     *
+     * @return array
+     */
+    public function get(array $columns = ['*'])
+    {
+        $query = 'SELECT ' . implode(',', $columns) . ' FROM ' . $this->table . $this->statement;
+
+        $statement = $this->connection->prepare($query);
+
+        $statement->execute();
+
+        return $statement->fetchAll(PDO::FETCH_OBJ);
     }
 }
