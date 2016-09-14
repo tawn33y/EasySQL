@@ -23,9 +23,9 @@ Swift SQL is a library created with the objective of reducing the amount of code
    - To illustrate a function's usage, simply uncomment the lines of code which follow the line commented out as /* .. */
        - For example, simply uncoment the second & third lines below (the lines commented out with a '//')
 
-      	 -  ```/* SELECT column_names FROM table_name */...```
+      	 -  ```/* SELECT column_names FROM table_name */```
       	 -  ```// $query = select("hello_world", ['id', 'name', 'random'], []);```
-     	    ```// print_results($query);```
+     	 -  ```// print_results($query);```
 
    - Note that in functions which return data from the database, the data is returned in a 2D array. Do a loop to get individual data (examples are given).
       e.g. in 'select()' && 'select2()' functions.
