@@ -141,8 +141,8 @@ $conn->select("contacts", ["phone_number"], ["first_name" => "lorem"]);
 $conn->select("contacts", ["phone_number"], null, ["id" => "DESC"]);
 
 $conn->select2("contacts", ["first_name"]);
-$conn->select2("contacts", ["first_name", "last_name"], "`first_name` LIKE 'lorem' && `id` %2 = 0 ORDER BY `id` DESC");
-$conn->select2("contacts", ["COUNT(`first_name`)"], "`id` %2 = 0");
+$conn->select2("contacts", ["first_name", "last_name"], "WHERE `first_name` LIKE 'lorem' && `id` %2 = 0 ORDER BY `id` DESC");
+$conn->select2("contacts", ["COUNT(`first_name`)"], "WHERE `id` %2 = 0");
 
 $conn->insert("contacts", ["first_name" => "testing"]);
 $conn->insert("contacts", ["first_name" => "testing", "last_name" => "testing", "phone_number" => "0"]);

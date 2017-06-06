@@ -1,8 +1,8 @@
-# EasySQL [![Shippable](https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff.svg?style=flat-square)]() [![Github file size](https://img.shields.io/github/size/webcaetano/craft/build/craft.min.js.svg?style=flat-square)]() [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]()
+# EasySQL [![Shippable](https://img.shields.io/shippable/5444c5ecb904a4b21567b0ff.svg?style=flat-square)]() [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)]()
 
 ![alt text](docs/assets/images/Logo-64.jpg "EasySQL")
 
-**Lightweight PHP library to perform SQL operations easily and securely**
+**A lightweight PHP library to perform SQL operations easily and securely**
 
 ## Features
 | Feature              | Description                                                                             |
@@ -84,20 +84,20 @@ unset($conn);
 ```
 
 ## Usage
-For guidelines on how to use EasySQL, see the [USAGE.md](./USAGE.md) file or [visit the project site](https://tawn33y.github.io/EasySQL/usage.html).
+For guidelines on how to use EasySQL, see the [USAGE.md](./USAGE.md) file or [visit the project site](https://github.com/tawn33y/EasySQL/blob/master/USAGE.md).
 
 ## Built With
-- [PHP 7.0](https://) - The web framework used
-- [PDO](https://) - The framework linking PHP to the Database
+- [PHP 7.0](http://php.net/) - The web framework used
+- [PDO](http://php.net/manual/en/book.pdo.php) - The framework linking PHP to the Database
 
 ## Documentation
-EasySQL uses an object-oriented approach highly facilitated by mixed inheritance, a combination of single and multilevel inheritance. For the classes' UML and relationship diagrams, see the [UML.pdf](./UML.pdf) file for more details. A full list of the classes is available in the [UML.md](./UML.md) file, and the [unminified source code](./dist/easysql.php) contains a description of the entire codebase.
+EasySQL uses an object-oriented approach highly facilitated by mixed inheritance, a combination of single and multilevel inheritance. For the classes' UML and relationship diagrams, see the [UML.jpg](./UML.jpg) file for more details. A full list of the classes is available in the [UML.md](./UML.md) file, and the [unminified source code](./dist/easysql.php) contains a description of the entire codebase.
 
 ## Contributing
 EasySQL is an open source software project and we encourage developers to contribute patches and code for us to include in the main package of EasySQL. All contributions will be fully **credited** - see the [Contributing.md](./CONTRIBUTING.md) file for details on our code of conduct, and the process for submitting pull requests.
 
 ## Versioning
-This project uses [semver](https:://semver) for versioning. Current version: v1.0.0
+This project uses [semver](https://semver.org) for versioning. Current version: v1.0.0
 
 ## Authors & Contributors
 This version is mantained by [K Tony](https://tawn33y.github.io). Many thanks to [Smodav](https://github.com/smodav) for introducing the concept of refactoring EasySQL via an Object Oriented approach in the previous version.

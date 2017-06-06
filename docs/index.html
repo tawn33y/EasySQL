@@ -1,418 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="assets/images/favicon.png" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" />
-	<link rel="stylesheet" href="assets/css/atelier-heath-light.css">
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-	<title>EasySQL</title>
-</head>
-
-<body data-spy="scroll" data-target="#navbar-white">
-	<nav class="navbar navbar-white navbar-default navbar-fixed-top" id="navbar-white">
-		<div class="container">
-			<div class="col-lg-12 padding0">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="">
-						Easy<span class="logo-fancy">SQL</span>
-					</a>
-				</div>
-
-				<div class="collapse navbar-collapse" id="navbar">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#features">FEATURES</a></li>
-						<li><a href="#about">ABOUT</a></li>
-						<li><a href="#demo">DEMO</a></li>
-						<li><a href="usage.md">USAGE</a></li>
-						<li>
-							<a href="https://github.com/tawn33y/EasySQL" target="_blank">
-								<span class="fa fa-github"></span> &nbsp;
-								<span class="visible-xs">GITHUB</span>
-							</a>
-						</li>
-						<li>
-							<a href="assets/EasySQL.zip">
-								<span class="fa fa-cloud-download"></span> &nbsp;
-								<span class="visible-xs">DOWNLOAD</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</nav>
-
-	<div class="container-fluid white section">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<section class="section-superhero">
-						<h3>
-							10 powerful lines of code. For 100*
-						</h3>
-
-						<p class="text-muted">
-							EasySQL remarkably <i>reduces</i> the amount of code you need for performing
-							CRUD database operations by taking over bulk redudant tasks, and letting you
-							concentrate on the important stuff.
-							<br />
-							Code less, do extra!
-						</p>
-
-						<a href="https://github.com/tawn33y/EasySQL" target="_blank">
-							<button class="btn btn-lg btn-default">
-								<span class="fa fa-github"></span> &nbsp;Github
-							</button>
-						</a>
-
-						&nbsp;&nbsp;
-						<a href="assets/EasySQL.zip">
-							<button class="btn btn-lg btn-success">
-								<span class="fa fa-cloud-download"></span> &nbsp;Download
-								<span class="download-help-text hidden-xs hidden-sm" align=center>(145 kb gzipped)</span>
-							</button>
-						</a>
-
-						<br />
-						<p class="text-muted" style="font-size: .8em">
-							* See <a href="#demo">demo</a> for a sample case study
-							<br />
-							- Current version: v1.0.0
-							<span class="visible-xs visible-sm">
-								- 145 kb gzipped
-							</span>
-						</p>
-					</section>
-				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<img src="assets/images/real-pixels.png" class="img-responsive" width="100%" />
-				</div>
-
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid grey section" id="features">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<section>
-						<h3>Features</h3>
-						<hr />
-
-						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="circle-icon">
-									<div><span class="fa fa-space-shuttle"></span></div>
-									<p>Fast &amp; Convenient</p>
-									<p>Write only a few lines of code for SQL CRUD operations</p>
-								</div>
-							</div>
-
-							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="circle-icon">
-									<div><span class="fa fa-lock"></span></div>
-									<p>No SQL Injection</p>
-									<p>Increased security via prepared statements and sanitized user input</p>
-								</div>
-							</div>
-
-							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="circle-icon">
-									<div><span class="fa fa-file-text-o"></span></div>
-									<p>Error Logging</p>
-									<p>Track script errors easily, and minify log files</p>
-								</div>
-							</div>
-
-							<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-								<div class="circle-icon">
-									<div><span class="fa fa-bug"></span></div>
-									<p>Error Handling</p>
-									<p>Graceful error handling via error exception objects</p>
-								</div>
-							</div>
-						</div>
-
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid white section" id="about">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<section>
-						<h3>About</h3>
-						<hr />
-
-						<p>
-							If you have been using PHP to perform CRUD (Create, Read, Update, Delete) operations to your database, you've
-							probably been writing a lot of code. Whether you're a newbie to or a novice at PHP, you are most likely
-							familiar with how much code is needed in order to connect to a database, perform a simple operation such as
-							reading data from a table, or log errors for debugging.
-							<br /><br />
-							With EasySQL, you can make your coding much easier by writing less code: you don't need to worry if you've
-							used prepared statements each time you make a CRUD operation, if you've escaped the data to prevent a
-							security breach, or if you've used the correct SQL syntax.
-							All this is handled for you so that you can concentrate on your project with your mind at ease, assured
-							that issues such as SQL injection are already taken care of.
-							<br /><br />
-							To get a better grasp of this, have a look at the <a href="#demo">demo</a>.
-						</p>
-
-						<br /><hr /><br />
-
-						<div class="row">
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-file-code-o"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">Built with PHP 7.0</h4>
-								    <p class="text-muted">
-											EasySQL uses PHP 7.0, which is a powerful server scripting language.
-										</p>
-								  </div>
-								</div>
-
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-database"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">Standard SQL</h4>
-								    <p class="text-muted">
-											EasySQL uses the standard language for accessing databases.
-										</p>
-								  </div>
-								</div>
-
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-object-group"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">PDO Approach</h4>
-								    <p class="text-muted">
-											EasySQL employs PDO, which works on 12 different database systems.
-										</p>
-								  </div>
-								</div>
-
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-file-zip-o"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">Minimal in size</h4>
-								    <p class="text-muted">
-											EasySQL is negligible in size (only 145 kb gzipped).
-										</p>
-								  </div>
-								</div>
-							</div>
-
-							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-file-text-o"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">Standard JSON Output</h4>
-								    <p class="text-muted">
-											JSON can be read and used as a data format by any programming language.
-										</p>
-								  </div>
-								</div>
-
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-gift"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">Extra functionality</h4>
-								    <p class="text-muted">
-											Enjoy extra functionality such as logs minification, and backtrace objects.
-										</p>
-								  </div>
-								</div>
-
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-plug"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">Plug &amp; Play</h4>
-								    <p class="text-muted">
-											EasySQL is simple to use; just include it in your script and you're good to go!
-										</p>
-								  </div>
-								</div>
-
-								<div class="media">
-								  <div class="media-left">
-								    <p>
-											<span class="fa fa-universal-access"></span>
-										</p>
-								  </div>
-								  <div class="media-body">
-								    <h4 class="media-heading">Wide Support</h4>
-								    <p class="text-muted">
-											EasySQL can work on any browser and server capable of processing PHP.
-										</p>
-								  </div>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid grey section" align=center>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<section>
-						<h3>Get EasySQL today</h3>
-						<hr />
-
-						<a href="https://github.com/tawn33y/EasySQL" target="_blank">
-							<button class="btn btn-md btn-default">
-								<span class="fa fa-github"></span> &nbsp;Github
-							</button>
-						</a>
-
-						&nbsp;&nbsp;
-						<a href="assets/EasySQL.zip">
-							<button class="btn btn-md btn-success">
-								<span class="fa fa-cloud-download"></span> &nbsp;Download
-							</button>
-						</a>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="container-fluid white section" id="demo">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<section>
-						<h3>Demo</h3>
-						<hr />
-
-						<p>
-							To illustrate the power of EasySQL, we will create the backend of a simple Contact Manager application.
-							We will use EasySQL to retrieve contacts from a sample database, add a new contact to the collection,
-							and perform several other operations.
-							<br /><br />
-							Alongside each operation, we will also show the amount of code you'd have required if you had not been
-							using EasySQL, whilst still maintaing core features such as avoiding SQL injection by using prepared
-							statements.
-							<br /><br />
-							Let's code away! <span class="fa fa-smile-o"></span>
-						</p>
-
-						<br />
-						<h4 class="page-header">Sample Contacts Database</h4>
-						<br/>
-						<table class="table table-bordered table-responsive">
-							<tr>
-								<th>id</th>
-								<th>first_name</th>
-								<th>last_name</th>
-								<th>phone_number</th>
-							</tr>
-
-							<tr>
-								<td>1</td>
-								<td>Hello</td>
-								<td>World</td>
-								<td>1234567890</td>
-							</tr>
-
-							<tr>
-								<td>2</td>
-								<td>Lorem</td>
-								<td>Ipsum</td>
-								<td>0987654321</td>
-							</tr>
-						</table>
-
-						<br />
-
-						<h4 class="page-header">Connecting to the database</h4>
-
-						<div>
-						  <!-- Nav tabs -->
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql0" aria-controls="sql0" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo0" aria-controls="pdo0" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql0" aria-controls="easysql0" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result0" aria-controls="result0" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-						  <!-- Tab panes -->
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql0">
-									<pre>
+<!-- EasySQL v1.0.0 (https://tawn33y.github.io/EasySQL) | (c) 2016-2017 K Tony (https://tawn33y.github.io) | License: MIT -->
+<!DOCTYPE HTML> <html> <head> <meta charset="UTF-8" /> <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> <meta name="viewport" content="width = device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=0" /> <meta name="keywords" content="SQL, PHP, library, OOP, CRUD, database, server, K Tony, tawn33y, software, secure, SQL injection, JSON, error logging, PDO, backtrace, browser, contacts, prepared statements, MySQLi, Access, Microsoft Access, git, github" /> <meta name="description" content="A lightweight PHP library to perform SQL operations easily and securely" /> <meta name="author" content="K Tony" /> <meta name="application-name" content="PHP" /> <meta name="generator" content="PHP" /> <meta property="og:title" content="EasySQL" /> <meta property="og:image" content="assets/images/Logo.jpg" /> <meta property="og:url" content="https://tawn33y.github.io/EasySQ:" /> <meta property="og:description" content="A lightweight PHP library to perform SQL operations easily and securely" /> <link rel="icon" type="image/png" href="assets/images/favicon.png" /> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" /> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" /> <link rel="stylesheet" href="assets/css/atelier-heath-light.css"> <link rel="stylesheet" href="assets/css/style.css" type="text/css" /> <title>EasySQL - A lightweight PHP library to perform SQL operations easily and securely</title> </head> <body data-spy="scroll" data-target="#navbar-white"> <nav class="navbar navbar-white navbar-default navbar-fixed-top" id="navbar-white"> <div class="container"> <div class="col-lg-12 padding0"> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href=""> Easy<span class="logo-fancy">SQL</span> </a> </div> <div class="collapse navbar-collapse" id="navbar"> <ul class="nav navbar-nav navbar-right"> <li><a href="#features">FEATURES</a></li> <li><a href="#about">ABOUT</a></li> <li><a href="#demo">DEMO</a></li> <li><a href="https://github.com/tawn33y/EasySQL/blob/master/USAGE.md" target="_blank">USAGE</a></li> <li> <a href="https://github.com/tawn33y/EasySQL" target="_blank"> <span class="fa fa-github"></span> &nbsp; <span class="visible-xs">GITHUB</span> </a> </li> <li> <a href="assets/EasySQL.zip"> <span class="fa fa-cloud-download"></span> &nbsp; <span class="visible-xs">DOWNLOAD</span> </a> </li> </ul> </div> </div> </div> </nav> <div class="container-fluid white section"> <div class="container"> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <section class="section-superhero"> <h3> 10 powerful lines of code. For 100* </h3> <p class="text-muted"> EasySQL remarkably <i>reduces</i> the amount of code you need for performing CRUD database operations by taking over bulk redudant tasks, and letting you concentrate on the important stuff. <br /> Code less, do extra! </p> <a href="https://github.com/tawn33y/EasySQL" target="_blank"> <button class="btn btn-lg btn-default"> <span class="fa fa-github"></span> &nbsp;Github </button> </a> &nbsp;&nbsp; <a href="assets/EasySQL.zip"> <button class="btn btn-lg btn-success"> <span class="fa fa-cloud-download"></span> &nbsp;Download <span class="download-help-text hidden-xs hidden-sm" align=center>(145 kb gzipped)</span> </button> </a> <br /> <p class="text-muted" style="font-size:.8em"> * See <a href="#demo">demo</a> for a sample case study <br /> - Current version: v1.0.0 <span class="visible-xs visible-sm"> - 145 kb gzipped </span> </p> </section> </div> <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <img src="assets/images/EasySQL v1.0.0 - snapshot.png" class="img-responsive" width="100%" alt="EasySQL v1.0.0 - snapshot" /> </div> </div> </div> </div> <div class="container-fluid grey section" id="features"> <div class="container"> <div class="row"> <div class="col-lg-12"> <section> <h3>Features</h3> <hr /> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <div class="circle-icon"> <div><span class="fa fa-space-shuttle"></span></div> <p>Fast &amp; Convenient</p> <p>Write only a few lines of code for SQL CRUD operations</p> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <div class="circle-icon"> <div><span class="fa fa-lock"></span></div> <p>No SQL Injection</p> <p>Increased security via prepared statements and sanitized user input</p> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <div class="circle-icon"> <div><span class="fa fa-file-text-o"></span></div> <p>Error Logging</p> <p>Track script errors easily, and minify log files</p> </div> </div> <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3"> <div class="circle-icon"> <div><span class="fa fa-bug"></span></div> <p>Error Handling</p> <p>Graceful error handling via error exception objects</p> </div> </div> </div> </section> </div> </div> </div> </div> <div class="container-fluid white section" id="about"> <div class="container"> <div class="row"> <div class="col-lg-12"> <section> <h3>About</h3> <hr /> <p> If you have been using PHP to perform CRUD (Create, Read, Update, Delete) operations to your database, you've probably been writing a lot of code. Whether you're a newbie to or a novice at PHP, you are most likely familiar with how much code is needed in order to connect to a database, perform a simple operation such as reading data from a table, or log errors for debugging. <br /><br /> With EasySQL, you can make your coding much easier by writing less code: you don't need to worry if you've used prepared statements each time you make a CRUD operation, if you've escaped the data to prevent a security breach, or if you've used the correct SQL syntax. All this is handled for you so that you can concentrate on your project with your mind at ease, assured that issues such as SQL injection are already taken care of. <br /><br /> To get a better grasp of this, have a look at the <a href="#demo">demo</a>. </p> <br /><hr /><br /> <div class="row"> <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <div class="media"> <div class="media-left"> <p> <span class="fa fa-file-code-o"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">Built with PHP 7.0</h4> <p class="text-muted"> EasySQL uses PHP 7.0, which is a powerful server scripting language. </p> </div> </div> <div class="media"> <div class="media-left"> <p> <span class="fa fa-database"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">Standard SQL</h4> <p class="text-muted"> EasySQL uses the standard language for accessing databases. </p> </div> </div> <div class="media"> <div class="media-left"> <p> <span class="fa fa-object-group"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">PDO Approach</h4> <p class="text-muted"> EasySQL employs PDO, which works on 12 different database systems. </p> </div> </div> <div class="media"> <div class="media-left"> <p> <span class="fa fa-file-zip-o"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">Minimal in size</h4> <p class="text-muted"> EasySQL is negligible in size (only 145 kb gzipped). </p> </div> </div> </div> <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"> <div class="media"> <div class="media-left"> <p> <span class="fa fa-file-text-o"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">Standard JSON Output</h4> <p class="text-muted"> JSON can be read and used as a data format by any programming language. </p> </div> </div> <div class="media"> <div class="media-left"> <p> <span class="fa fa-gift"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">Extra functionality</h4> <p class="text-muted"> Enjoy extra functionality such as logs minification, and backtrace objects. </p> </div> </div> <div class="media"> <div class="media-left"> <p> <span class="fa fa-plug"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">Plug &amp; Play</h4> <p class="text-muted"> EasySQL is simple to use; just include it in your script and you're good to go! </p> </div> </div> <div class="media"> <div class="media-left"> <p> <span class="fa fa-universal-access"></span> </p> </div> <div class="media-body"> <h4 class="media-heading">Wide Support</h4> <p class="text-muted"> EasySQL can work on any browser and server capable of processing PHP. </p> </div> </div> </div> </div> </section> </div> </div> </div> </div> <div class="container-fluid grey section" align=center> <div class="container"> <div class="row"> <div class="col-lg-12"> <section> <h3>Get EasySQL today</h3> <hr /> <a href="https://github.com/tawn33y/EasySQL" target="_blank"> <button class="btn btn-md btn-default"> <span class="fa fa-github"></span> &nbsp;Github </button> </a> &nbsp;&nbsp; <a href="assets/EasySQL.zip"> <button class="btn btn-md btn-success"> <span class="fa fa-cloud-download"></span> &nbsp;Download </button> </a> </section> </div> </div> </div> </div> <div class="container-fluid white section" id="demo"> <div class="container"> <div class="row"> <div class="col-lg-12"> <section> <h3>Demo</h3> <hr /> <p> To illustrate the power of EasySQL, we will create the backend of a simple Contact Manager application. We will use EasySQL to retrieve contacts from a sample database, add a new contact to the collection, and perform several other operations. <br /><br /> Alongside each operation, we will also show the amount of code you'd have required if you had not been using EasySQL, whilst still maintaing core features such as avoiding SQL injection by using prepared statements. <br /><br /> Let's code away! <span class="fa fa-smile-o"></span> </p> <br /> <h4 class="page-header">Sample Contacts Database</h4> <br/> <table class="table table-bordered table-responsive"> <tr> <th>id</th> <th>first_name</th> <th>last_name</th> <th>phone_number</th> </tr> <tr> <td>1</td> <td>Hello</td> <td>World</td> <td>1234567890</td> </tr> <tr> <td>2</td> <td>Lorem</td> <td>Ipsum</td> <td>0987654321</td> </tr> </table> <br /> <h4 class="page-header">Connecting to the database</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql0" aria-controls="sql0" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo0" aria-controls="pdo0" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql0" aria-controls="easysql0" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result0" aria-controls="result0" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql0"> <pre>
 										<code class="sql">
 mysql --user=username --password=user_password
 use sample_db
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo0">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo0"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -431,11 +23,7 @@ catch(PDOException $e)
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql0">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql0"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -444,11 +32,7 @@ $conn->set_credentials("mysql", "localhost", "username", "user_password", "sampl
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result0">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result0"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -456,55 +40,11 @@ $conn->set_credentials("mysql", "localhost", "username", "user_password", "sampl
     "data": null
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 11 &nbsp;|&nbsp; 2</p>
-						<br />
-
-						<h4 class="page-header">1. Retrieving all contacts from the database</h4>
-
-						<div>
-						  <!-- Nav tabs -->
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql1" aria-controls="sql1" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo1" aria-controls="pdo1" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql1" aria-controls="easysql1" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result1" aria-controls="result1" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-						  <!-- Tab panes -->
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql1">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 11 &nbsp;|&nbsp; 2</p> <br /> <h4 class="page-header">1. Retrieving all contacts from the database</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql1" aria-controls="sql1" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo1" aria-controls="pdo1" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql1" aria-controls="easysql1" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result1" aria-controls="result1" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql1"> <pre>
 										<code class="sql">
 SELECT `id`, `first_name`, `last_name`, `phone_number` FROM `contacts`
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo1">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo1"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -525,11 +65,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql1">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql1"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -537,11 +73,7 @@ $conn->select("contacts", ["id", "first_name", "last_name", "phone_number"]);
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result1">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result1"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -562,53 +94,11 @@ $conn->select("contacts", ["id", "first_name", "last_name", "phone_number"]);
     ]
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 23 &nbsp;|&nbsp; 3</p>
-						<br />
-
-						<h4 class="page-header">2. Retrieving a contact for a specific person</h4>
-
-						<div>
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql2" aria-controls="sql2" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo2" aria-controls="pdo2" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql2" aria-controls="easysql2" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result2" aria-controls="result2" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql2">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 23 &nbsp;|&nbsp; 3</p> <br /> <h4 class="page-header">2. Retrieving a contact for a specific person</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql2" aria-controls="sql2" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo2" aria-controls="pdo2" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql2" aria-controls="easysql2" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result2" aria-controls="result2" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql2"> <pre>
 										<code class="sql">
 SELECT `first_name`, `last_name`, `phone_number` FROM `contacts` WHERE `id` = '2'
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo2">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo2"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -629,11 +119,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql2">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql2"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -641,11 +127,7 @@ $conn->select("contacts", ["first_name", "last_name", "phone_number"], ["id" => 
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result2">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result2"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -659,53 +141,11 @@ $conn->select("contacts", ["first_name", "last_name", "phone_number"], ["id" => 
     ]
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 35 &nbsp;|&nbsp; 4</p>
-						<br />
-
-						<h4 class="page-header">3. Retrieving all contacts beginning with the latest inserted (DESC order)</h4>
-
-						<div>
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql3" aria-controls="sql3" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo3" aria-controls="pdo3" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql3" aria-controls="easysql3" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result3" aria-controls="result3" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql3">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 35 &nbsp;|&nbsp; 4</p> <br /> <h4 class="page-header">3. Retrieving all contacts beginning with the latest inserted (DESC order)</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql3" aria-controls="sql3" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo3" aria-controls="pdo3" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql3" aria-controls="easysql3" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result3" aria-controls="result3" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql3"> <pre>
 										<code class="sql">
 SELECT `id`, `first_name`, `last_name`, `phone_number` FROM `contacts` ORDER BY `id` DESC
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo3">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo3"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -726,11 +166,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql3">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql3"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -738,11 +174,7 @@ $conn->select("contacts", ["id", "first_name", "last_name", "phone_number"], nul
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result3">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result3"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -763,53 +195,11 @@ $conn->select("contacts", ["id", "first_name", "last_name", "phone_number"], nul
     ]
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 47 &nbsp;|&nbsp; 5</p>
-						<br />
-
-						<h4 class="page-header">4. Searching for a phone number using the first name</h4>
-
-						<div>
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql4" aria-controls="sql4" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo4" aria-controls="pdo4" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql4" aria-controls="easysql4" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result4" aria-controls="result4" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql4">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 47 &nbsp;|&nbsp; 5</p> <br /> <h4 class="page-header">4. Searching for a phone number using the first name</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql4" aria-controls="sql4" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo4" aria-controls="pdo4" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql4" aria-controls="easysql4" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result4" aria-controls="result4" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql4"> <pre>
 										<code class="sql">
 SELECT `phone_number` FROM `contacts` WHERE `first_name` LIKE 'Lorem'
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo4">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo4"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -830,11 +220,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql4">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql4"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -842,11 +228,7 @@ $conn->select2("contacts", ["phone_number"], "`first_name` LIKE 'Lorem'");
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result4">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result4"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -858,53 +240,11 @@ $conn->select2("contacts", ["phone_number"], "`first_name` LIKE 'Lorem'");
     ]
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 59 &nbsp;|&nbsp; 6</p>
-						<br />
-
-						<h4 class="page-header">5. Updating the phone number for a specific person</h4>
-
-						<div>
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql5" aria-controls="sql5" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo5" aria-controls="pdo5" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql5" aria-controls="easysql5" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result5" aria-controls="result5" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql5">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 59 &nbsp;|&nbsp; 6</p> <br /> <h4 class="page-header">5. Updating the phone number for a specific person</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql5" aria-controls="sql5" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo5" aria-controls="pdo5" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql5" aria-controls="easysql5" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result5" aria-controls="result5" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql5"> <pre>
 										<code class="sql">
 UPDATE `contacts` SET `phone_number` = '3268790920' WHERE `first_name` = 'Lorem'
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo5">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo5"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -920,11 +260,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql5">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql5"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -932,11 +268,7 @@ $conn->update("contacts", ["phone_number" => "3268790920"], ["first_name" => "Lo
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result5">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result5"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -944,53 +276,11 @@ $conn->update("contacts", ["phone_number" => "3268790920"], ["first_name" => "Lo
     "data": null
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 67 &nbsp;|&nbsp; 7</p>
-						<br />
-
-						<h4 class="page-header">6. Creating a new contact</h4>
-
-						<div>
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql6" aria-controls="sql6" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo6" aria-controls="pdo6" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql6" aria-controls="easysql6" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result6" aria-controls="result6" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql6">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 67 &nbsp;|&nbsp; 7</p> <br /> <h4 class="page-header">6. Creating a new contact</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql6" aria-controls="sql6" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo6" aria-controls="pdo6" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql6" aria-controls="easysql6" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result6" aria-controls="result6" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql6"> <pre>
 										<code class="sql">
 INSERT INTO `contacts` (`first_name`, `last_name`, `phone_number`) VALUES ('Neil', 'Patrick Harris', '7854203248')
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo6">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo6"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -1017,11 +307,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql6">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql6"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -1029,11 +315,7 @@ $conn->insert("contacts", ["first_name" => "Neil", "last_name" => "Patrick Harri
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result6">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result6"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -1045,53 +327,11 @@ $conn->insert("contacts", ["first_name" => "Neil", "last_name" => "Patrick Harri
     ]
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 84 &nbsp;|&nbsp; 8</p>
-						<br />
-
-						<h4 class="page-header">7. Deleting a contact</h4>
-
-						<div>
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql7" aria-controls="sql7" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo7" aria-controls="pdo7" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql7" aria-controls="easysql7" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result7" aria-controls="result7" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql7">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 84 &nbsp;|&nbsp; 8</p> <br /> <h4 class="page-header">7. Deleting a contact</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql7" aria-controls="sql7" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo7" aria-controls="pdo7" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql7" aria-controls="easysql7" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result7" aria-controls="result7" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql7"> <pre>
 										<code class="sql">
 DELETE FROM `contacts` WHERE `first_name` = 'Neil'
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo7">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo7"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -1107,11 +347,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql7">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql7"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -1119,11 +355,7 @@ $conn->delete("contacts", ["first_name" => "Neil"]);
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result7">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result7"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -1131,53 +363,11 @@ $conn->delete("contacts", ["first_name" => "Neil"]);
     "data": null
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 92 &nbsp;|&nbsp; 9</p>
-						<br />
-
-						<h4 class="page-header">8. Adding email addresses for the contacts</h4>
-
-						<div>
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" class="active">
-									<a href="#sql8" aria-controls="sql8" role="tab" data-toggle="tab">
-										SQL Syntax
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#pdo8" aria-controls="pdo8" role="tab" data-toggle="tab">
-										PDO
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#easysql8" aria-controls="easysql8" role="tab" data-toggle="tab">
-										EasySQL
-									</a>
-								</li>
-						    <li role="presentation">
-									<a href="#result8" aria-controls="result8" role="tab" data-toggle="tab">
-										Result (EasySQL)
-									</a>
-								</li>
-						  </ul>
-							<br />
-
-							<div class="tab-content">
-							  <div role="tabpanel" class="tab-pane fade in active" id="sql8">
-									<pre>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 92 &nbsp;|&nbsp; 9</p> <br /> <h4 class="page-header">8. Adding email addresses for the contacts</h4> <div> <ul class="nav nav-tabs" role="tablist"> <li role="presentation" class="active"> <a href="#sql8" aria-controls="sql8" role="tab" data-toggle="tab"> SQL Syntax </a> </li> <li role="presentation"> <a href="#pdo8" aria-controls="pdo8" role="tab" data-toggle="tab"> PDO </a> </li> <li role="presentation"> <a href="#easysql8" aria-controls="easysql8" role="tab" data-toggle="tab"> EasySQL </a> </li> <li role="presentation"> <a href="#result8" aria-controls="result8" role="tab" data-toggle="tab"> Result (EasySQL) </a> </li> </ul> <br /> <div class="tab-content"> <div role="tabpanel" class="tab-pane fade in active" id="sql8"> <pre>
 										<code class="sql">
 ALTER TABLE `contacts` ADD `email_address` VARCHAR(255) NOT NULL;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="pdo8">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="pdo8"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -1193,11 +383,7 @@ catch(PDOException $e) {
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="easysql8">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="easysql8"> <pre>
 										<code class="php">
 &lt;?php
 
@@ -1205,11 +391,7 @@ $conn->alter("contacts", "ADD", ["email_address" => "VARCHAR(255) NOT NULL"]);
 
 ?&gt;
 										</code>
-									</pre>
-								</div>
-
-							  <div role="tabpanel" class="tab-pane fade" id="result8">
-									<pre>
+									</pre> </div> <div role="tabpanel" class="tab-pane fade" id="result8"> <pre>
 										<code class="json">
 {
     "code": 200,
@@ -1217,48 +399,4 @@ $conn->alter("contacts", "ADD", ["email_address" => "VARCHAR(255) NOT NULL"]);
     "data": null
 }
 									</code>
-								</pre>
-								</div>
-							</div>
-
-						</div>
-
-						<p class="bg-info text-muted">Lines of code so far:&nbsp; 100 &nbsp;|&nbsp; 10</p>
-
-						<br />
-						<h4 class="page-header">Next Steps</h4>
-
-						<p>
-							That's it! I hope I've made your coding much easier.
-							<br /><br />
-
-							<span class="fa fa-share"></span> &nbsp;
-							Please remember to share this with your friend and a fellow dev if it has benefitted you.
-							<br /><br />
-
-							<span class="fa fa-git"></span> &nbsp;
-							You can also raise an issue or contribute to the project on
-							<a href="https://github.com/tawn33y/EasySQL" target="_blank">Github</a>.
-						</p>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<footer>
-		<div class="container-fluid footer" align=center>
-			<div class="row">
-				<div class="col-lg-12">
-					<p>Made with &lt;3 by <a href="https://tawn33y.github.io" target="_blank">@tawn33y</a>.</p>
-				</div>
-			</div>
-		</div>
-
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="assets/js/highlight.pack.js"></script>
-		<script>hljs.initHighlightingOnLoad();</script>
-	</footer>
-</body>
-</html>
+								</pre> </div> </div> </div> <p class="bg-info text-muted">Lines of code so far:&nbsp; 100 &nbsp;|&nbsp; 10</p> <br /> <h4 class="page-header">Next Steps</h4> <p> That's it! I hope I've made your coding much easier. <br /><br /> <span class="fa fa-share"></span> &nbsp; Please remember to share this with your friend and a fellow dev if it has benefitted you. <br /><br /> <span class="fa fa-git"></span> &nbsp; You can also raise an issue or contribute to the project on <a href="https://github.com/tawn33y/EasySQL" target="_blank">Github</a>. </p> </section> </div> </div> </div> </div> <footer> <div class="container-fluid footer" align=center> <div class="row"> <div class="col-lg-12"> <p>Made with &lt;3 by <a href="https://tawn33y.github.io" target="_blank">@tawn33y</a>.</p> </div> </div> </div> <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> <script src="assets/js/highlight.pack.js"></script> <script>hljs.initHighlightingOnLoad();</script> </footer> </body> </html>

@@ -1,5 +1,5 @@
 ## Usage
-**NOTE:** *This document is also [available online on the project site](https://tawn33y.github.io/EasySQL/usage.md).*
+**NOTE:** *This document is also [available online on the project site](https://github.com/tawn33y/EasySQL/blob/master/USAGE.md).*
 
 ### Functions
 1. **Initializing**
@@ -158,7 +158,7 @@
     <?php
     // HACK: Use this for complex queries such as "Right Join", "LIKE", etc.
     // HACK: You can replace ASC with DESC to select data in a descending order
-    $conn->select2("sample_db", ["column_1", "column_2"], "`column_1` LIKE '%value%' && `column_2` %2 = 0 ORDER BY `column_1` ASC");
+    $conn->select2("sample_db", ["column_1", "column_2"], "WHERE `column_1` LIKE '%value%' && `column_2` %2 = 0 ORDER BY `column_1` ASC");
     ?>
     ```
   - ***Insert***
